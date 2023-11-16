@@ -2,7 +2,8 @@ import streamlit as st
 from transformers import pipeline
 
 # Load the sentiment analysis pipeline
-classifier = pipeline("sentiment-analysis", model="michellejieli/NSFW_text_classification")
+classifier = pipeline("sentiment-analysis", model="michellejieli/NSFW_text_classification", revision="main")
+
 
 # Streamlit app
 def main():
